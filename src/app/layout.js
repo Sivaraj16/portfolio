@@ -7,8 +7,8 @@ import SmoothScroll from "@/components/SmoothScroll";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Himanshu Sangwan",
-  description: "Himanshu Sangwan is a full stack developer.",
+  title: "Sivaraj's Portfolio",
+  description: "Sivaraj is a full stack developer.",
 };
 
 export default function RootLayout({ children }) {
