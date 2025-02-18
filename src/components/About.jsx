@@ -40,26 +40,47 @@ const ServiceCard = ({ index, title, icon }) => (
 const About = () => {
   return (
     <>
-      <div className='relative overflow-hidden lg:overflow-visible'>
+      <div className="relative overflow-hidden lg:overflow-visible">
         <motion.div variants={textVariant()}>
-          <p className={'sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider'}>Introduction</p>
-          <h2 className={'text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'}>Overview.</h2>
+          <p
+            className={
+              "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider"
+            }
+          >
+            Introduction
+          </p>
+          <h2
+            className={
+              "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]"
+            }
+          >
+            Overview.
+          </h2>
         </motion.div>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-4 text-secondary text-[18px] max-w-3xl leading-[30px] font-semibold'
+          className="mt-4 text-secondary text-[18px] max-w-3xl leading-[30px] font-semibold"
         >
-          I'm a passionate full-stack developer with expertise in AI/ML, dedicated to
-          designing and implementing scalable, end-to-end applications. Skilled in
-          leveraging machine learning to solve real-world problems and deliver
-          impactful solutions. Excited to contribute to innovative projects in a
-          collaborative and dynamic environment.
+          I'm a passionate full-stack developer with expertise in AI/ML,
+          dedicated to designing and implementing scalable, end-to-end
+          applications. Skilled in leveraging machine learning to solve
+          real-world problems and deliver impactful solutions. Excited to
+          contribute to innovative projects in a collaborative and dynamic
+          environment.
         </motion.p>
-        <Image src={color_sharp} alt="color-sharp" className="absolute z-[-1] h-80 -left-60 w-screen -top-20" />
-        <Image src={astronaut} alt="astronaut" className="absolute z-[-1] h-80 -right-20 animation top-28" />
+        <Image
+          src={color_sharp}
+          alt="color-sharp"
+          className="absolute z-[-1] h-80 -left-60 w-screen -top-20"
+        />
+        <Image
+          src={astronaut}
+          alt="astronaut"
+          className="absolute z-[-1] h-80 -right-20 animation top-28"
+        />
       </div>
 
-      <div className='mt-20 flex-wrap justify-center gap-10 hidden md:flex'>
+      <div className="mt-20 flex-wrap justify-center gap-10 hidden md:flex">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
